@@ -1,0 +1,6 @@
+﻿2023-06-28 12:50:34.470 +0530	START		Running CaptureFailedScreenshot.script
+2023-06-28 12:50:34.553 +0530	Log		D:/EggplantSuites/NewSuitePractice.suite/Results/MPCBPart/Logfile.txt	4	on_capturefailedscreenshot	CaptureFailedScreenshot.script
+2023-06-28 12:50:34.561 +0530	runwithnewresults		DummyFailedScript.script (D:/EggplantSuites/NewSuitePractice.suite/Results/DummyFailedScript/20230628_125034.553/LogFile.txt)	6	on_capturefailedscreenshot	CaptureFailedScreenshot.script
+2023-06-28 12:50:35.183 +0530	Log		{Duration:0.444, ErrorMessage:@"Image Not Found -- click Error - No Text Found On Screen: \"(TEXT:\"laxmi\")\". Text not found.", Errors:1, Exceptions:1, LogFile:"D:/EggplantSuites/NewSuitePractice.suite/Results/DummyFailedScript/20230628_125034.553/LogFile.txt", ReturnValue:"", RunDate:"2023-06-28 12:50:34.553 +0530", Status:"Failure", Successes:0, Warnings:0}	8	on_capturefailedscreenshot	CaptureFailedScreenshot.script
+2023-06-28 12:50:35.249 +0530	EndTestCase		(Duration:"0.778", Errors:"1", Exceptions:"1", StartTime:"2023-06-28 12:50:34 +0530", Successes:"1", TestCase:"CaptureFailedScreenshot.script", Warnings:"0")
+2023-06-28 12:50:35.323 +0530	SUCCESS		Execution Time 0:00:00 CaptureFailedScreenshot.script

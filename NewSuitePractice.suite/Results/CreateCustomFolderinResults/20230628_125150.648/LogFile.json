@@ -1,0 +1,45 @@
+{
+	"entries": [
+		{
+				"message": "Running CreateCustomFolderinResults.script",
+				"identifier": "START",
+				"timestamp": "2023-06-28 12:51:50.658 +0530"
+			},
+		{
+				"handlerName": "on_createcustomfolderinresults",
+				"timestamp": "2023-06-28 12:51:50.756 +0530",
+				"message": "D:/EggplantSuites/NewSuitePractice.suite/Results/MPCBPart/Logfile.txt",
+				"scriptName": "CreateCustomFolderinResults.script",
+				"handlerLine": 7,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_createcustomfolderinresults",
+				"timestamp": "2023-06-28 12:51:50.764 +0530",
+				"message": "D:/EggplantSuites/NewSuitePractice.suite/Results/MPCBPart/",
+				"scriptName": "CreateCustomFolderinResults.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_createcustomfolderinresults",
+				"timestamp": "2023-06-28 12:51:50.781 +0530",
+				"message": "Unable to locate script named: Untitled2",
+				"scriptName": "CreateCustomFolderinResults.script",
+				"handlerLine": 24,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"0.161\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2023-06-28 12:51:50 +0530\", Successes:\"0\", TestCase:\"CreateCustomFolderinResults.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2023-06-28 12:51:50.821 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Error Running Script Command: runwithnewresults Error - Unable to locate script named: Untitled2 -- Execution Time 0:00:00 CreateCustomFolderinResults.script",
+				"identifier": "FAILURE",
+				"timestamp": "2023-06-28 12:51:50.974 +0530"
+			}
+	],
+	"createdTimestamp": "2023-06-28 12:51:50.660 +0530"
+}

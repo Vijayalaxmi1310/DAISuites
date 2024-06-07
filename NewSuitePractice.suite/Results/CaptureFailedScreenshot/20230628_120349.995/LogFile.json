@@ -1,0 +1,38 @@
+{
+	"entries": [
+		{
+				"message": "Running CaptureFailedScreenshot.script",
+				"identifier": "START",
+				"timestamp": "2023-06-28 12:03:50.015 +0530"
+			},
+		{
+				"handlerName": "on_dummyfailedscript",
+				"timestamp": "2023-06-28 12:03:50.212 +0530",
+				"message": "TutorialSUT:(null)",
+				"scriptName": "DummyFailedScript.script",
+				"handlerLine": 1,
+				"identifier": "Connect"
+			},
+		{
+				"handlerName": "on_dummyfailedscript",
+				"timestamp": "2023-06-28 12:03:56.283 +0530",
+				"scriptName": "DummyFailedScript.script",
+				"message": "No Text Found On Screen: \"(TEXT:\"laxmi\")\". Text not found.",
+				"image": "(TEXT:\"laxmi\")",
+				"handlerLine": 2,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"6.302\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2023-06-28 12:03:50 +0530\", Successes:\"0\", TestCase:\"CaptureFailedScreenshot.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2023-06-28 12:03:56.326 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Image Not Found: click Error - No Text Found On Screen: \"(TEXT:\"laxmi\")\". Text not found. -- Execution Time 0:00:06 CaptureFailedScreenshot.script",
+				"identifier": "FAILURE",
+				"timestamp": "2023-06-28 12:03:56.403 +0530"
+			}
+	],
+	"createdTimestamp": "2023-06-28 12:03:50.024 +0530"
+}

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="CaptureFailedScreenshot_script" package="NewSuitePractice.suite" timestamp="2023-06-28 12:07:58.734 +0530"
+ tests="1"  failures="0" errors="0" time="0.992000">
+  <properties>
+   <property name="RunDate" value="2023-06-28 12:07:58.734 +0530"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="CaptureFailedScreenshot.script" assertions="2" status="error"  time="0.944">
+  </testcase>
+ </testsuite>
+</testsuites>

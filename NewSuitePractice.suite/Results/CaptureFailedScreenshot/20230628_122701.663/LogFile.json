@@ -1,0 +1,37 @@
+{
+	"entries": [
+		{
+				"message": "Running CaptureFailedScreenshot.script",
+				"identifier": "START",
+				"timestamp": "2023-06-28 12:27:01.672 +0530"
+			},
+		{
+				"handlerName": "on_capturefailedscreenshot",
+				"timestamp": "2023-06-28 12:27:01.791 +0530",
+				"message": "D:/EggplantSuites/NewSuitePractice.suite/Results/MPCBPart/Logfile.txt",
+				"scriptName": "CaptureFailedScreenshot.script",
+				"handlerLine": 4,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_capturefailedscreenshot",
+				"timestamp": "2023-06-28 12:27:01.815 +0530",
+				"message": "Unable to locate script named: ",
+				"scriptName": "CaptureFailedScreenshot.script",
+				"handlerLine": 6,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"0.167\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2023-06-28 12:27:01 +0530\", Successes:\"0\", TestCase:\"CaptureFailedScreenshot.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2023-06-28 12:27:01.847 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Error Running Script Command: runwithnewresults Error - Unable to locate script named:  -- Execution Time 0:00:00 CaptureFailedScreenshot.script",
+				"identifier": "FAILURE",
+				"timestamp": "2023-06-28 12:27:01.989 +0530"
+			}
+	],
+	"createdTimestamp": "2023-06-28 12:27:01.680 +0530"
+}

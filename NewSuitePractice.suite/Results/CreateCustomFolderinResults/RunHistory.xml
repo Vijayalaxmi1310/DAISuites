@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="CreateCustomFolderinResults">
+ <run>
+  <RunDate>2023-06-28 12:51:50.648 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.173000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_125150.648/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Error Running Script Command -- runwithnewresults Error - Unable to locate script named: Untitled2</ErrorMessage>
+ </run>
+</runHistory>

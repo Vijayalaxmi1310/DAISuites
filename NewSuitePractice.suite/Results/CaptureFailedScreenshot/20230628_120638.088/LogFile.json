@@ -1,0 +1,23 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_capturefailedscreenshot",
+				"timestamp": "2023-06-28 12:06:38.796 +0530",
+				"message": "{Duration:0.506, ErrorMessage:@\"Image Not Found -- click Error - No Text Found On Screen: \\\"(TEXT:\\\"laxmi\\\")\\\". Text not found.\", Errors:1, Exceptions:1, LogFile:\"D:/EggplantSuites/NewSuitePractice.suite/Results/DummyFailedScript/20230628_120638.162/LogFile.txt\", ReturnValue:\"\", RunDate:\"2023-06-28 12:06:38.162 +0530\", Status:\"Failure\", Successes:0, Warnings:0}",
+				"scriptName": "CaptureFailedScreenshot.script",
+				"handlerLine": 5,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"0.763\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2023-06-28 12:06:38 +0530\", Successes:\"1\", TestCase:\"CaptureFailedScreenshot.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2023-06-28 12:06:38.860 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:00 CaptureFailedScreenshot.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2023-06-28 12:06:38.926 +0530"
+			}
+	],
+	"createdTimestamp": "2023-06-28 12:06:38.804 +0530"
+}

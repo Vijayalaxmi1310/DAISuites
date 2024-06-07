@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running BottlesScript.script",
+				"identifier": "START",
+				"timestamp": "2023-06-28 10:50:12.106 +0530"
+			},
+		{
+				"message": "(Duration:\"112.588\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2023-06-28 10:50:12 +0530\", Successes:\"1\", TestCase:\"BottlesScript.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2023-06-28 10:52:04.708 +0530"
+			},
+		{
+				"message": "Execution Time 0:01:52 BottlesScript.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2023-06-28 10:52:04.762 +0530"
+			}
+	],
+	"createdTimestamp": "2023-06-28 10:50:12.110 +0530"
+}

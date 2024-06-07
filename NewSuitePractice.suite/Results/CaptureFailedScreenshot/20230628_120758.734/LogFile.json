@@ -1,0 +1,23 @@
+{
+	"entries": [
+		{
+				"handlerName": "on_capturefailedscreenshot",
+				"timestamp": "2023-06-28 12:07:59.648 +0530",
+				"message": "D:/EggplantSuites/NewSuitePractice.suite/Results/MPCBPart/Logfile.txt",
+				"scriptName": "CaptureFailedScreenshot.script",
+				"handlerLine": 4,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"0.944\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2023-06-28 12:07:58 +0530\", Successes:\"1\", TestCase:\"CaptureFailedScreenshot.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2023-06-28 12:07:59.726 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:00 CaptureFailedScreenshot.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2023-06-28 12:07:59.831 +0530"
+			}
+	],
+	"createdTimestamp": "2023-06-28 12:07:59.657 +0530"
+}

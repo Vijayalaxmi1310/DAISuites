@@ -1,0 +1,5 @@
+﻿2023-06-28 12:19:10.851 +0530	START		Running CaptureFailedScreenshot.script
+2023-06-28 12:19:10.933 +0530	Log		D:/EggplantSuites/NewSuitePractice.suite/Results/MPCBPart/Logfile.txt	3	on_capturefailedscreenshot	CaptureFailedScreenshot.script
+2023-06-28 12:19:10.941 +0530	runwithnewresults		DummyFailedScript.script (D:/EggplantSuites/NewSuitePractice.suite/Results/DummyFailedScript/20230628_121910.941/LogFile.txt)	5	on_capturefailedscreenshot	CaptureFailedScreenshot.script
+2023-06-28 12:19:11.648 +0530	EndTestCase		(Duration:"0.793", Errors:"1", Exceptions:"1", StartTime:"2023-06-28 12:19:10 +0530", Successes:"1", TestCase:"CaptureFailedScreenshot.script", Warnings:"0")
+2023-06-28 12:19:11.722 +0530	SUCCESS		Execution Time 0:00:00 CaptureFailedScreenshot.script

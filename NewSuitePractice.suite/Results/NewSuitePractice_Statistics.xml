@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<statistics>
+ <script name="CreateCustomFolderinResults">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2023-06-28 12:51:50 +0530</FirstRun>
+  <LastRun>2023-06-28 12:51:50 +0530</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="BottlesScript">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2023-06-28 10:50:12 +0530</FirstRun>
+  <LastRun>2023-06-28 10:50:12 +0530</LastRun>
+  <TotalTimeOnSuccess>112.599000</TotalTimeOnSuccess>
+ </script>
+ <script name="APITest1-API">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2023-06-30 14:32:00 +0530</FirstRun>
+  <LastRun>2023-06-30 14:32:00 +0530</LastRun>
+  <TotalTimeOnSuccess>0.791000</TotalTimeOnSuccess>
+ </script>
+ <script name="DummyFailedScript">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>10</NumberOfRuns>
+  <NumberOfFails>10</NumberOfFails>
+  <FirstRun>2023-06-28 12:04:49 +0530</FirstRun>
+  <LastRun>2023-06-28 12:56:17 +0530</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="CaptureFailedScreenshot">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>20</NumberOfRuns>
+  <NumberOfFails>12</NumberOfFails>
+  <FirstRun>2023-06-28 12:03:49 +0530</FirstRun>
+  <LastRun>2023-06-28 12:57:27 +0530</LastRun>
+  <TotalTimeOnSuccess>6.778000</TotalTimeOnSuccess>
+ </script>
+</statistics>
