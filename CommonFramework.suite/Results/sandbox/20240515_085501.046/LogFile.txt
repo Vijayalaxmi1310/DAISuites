@@ -1,0 +1,5 @@
+﻿2024-05-15 08:55:01.049 +0100	START		Running sandbox.script
+2024-05-15 08:55:04.157 +0100	imagerectangle	(TEXT:"[1024], Application, CBR Server, Total Unicast Fragments Received (fragments) = 24")	at [107,854,515,865]	4	on_sandbox	sandbox.script
+2024-05-15 08:55:04.190 +0100	readtext		(0,849,107,870)	8	on_sandbox	sandbox.script
+2024-05-15 08:55:04.208 +0100	EndTestCase		(Duration:"3.15683", Errors:"1", Exceptions:"0", StartTime:"2024-05-15 08:55:01 +0100", Successes:"0", TestCase:"sandbox.script", Warnings:"0")
+2024-05-15 08:55:04.325 +0100	FAILURE	Screen_Error.png	AssertionFailed:  (assertion: mVar contains "2"; actually: mVar DOES NOT contain 2) -- Execution Time 0:00:03 sandbox.script

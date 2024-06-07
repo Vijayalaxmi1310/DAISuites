@@ -1,0 +1,19 @@
+﻿{
+    CaptureDate = "2024-05-15 07:40:26 +0000";
+    CaptureHost = "win11SUT";
+    CaptureScreenSize = (
+        1520,
+        1080);
+    HasAlpha = 1;
+    HotSpotX = 81;
+    HotSpotY = 44;
+    LastKnownLocationX = 0;
+    LastKnownLocationY = 0;
+    OriginalLocationX = 701;
+    OriginalLocationY = 224;
+    Precise = 0;
+    Pulsing = 0;
+    Scale = 1;
+    SearchObjectName = "logos/aronium";
+    tags = ();
+}

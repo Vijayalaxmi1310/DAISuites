@@ -1,0 +1,45 @@
+{
+  "entries" : [
+    {
+      "identifier" : "START",
+      "message" : "Running sandbox.script",
+      "timestamp" : "2024-05-15 08:55:12.522 +0100"
+    },
+    {
+      "handlerName" : "on_sandbox",
+      "message" : "at [107,854,515,865]",
+      "identifier" : "imagerectangle",
+      "image" : "(TEXT:\"[1024], Application, CBR Server, Total Unicast Fragments Received (fragments) = 24\")",
+      "handlerLine" : 4,
+      "timestamp" : "2024-05-15 08:55:15.485 +0100",
+      "scriptName" : "sandbox.script"
+    },
+    {
+      "handlerName" : "on_sandbox",
+      "message" : "(0,849,107,870)",
+      "timestamp" : "2024-05-15 08:55:15.520 +0100",
+      "identifier" : "readtext",
+      "scriptName" : "sandbox.script",
+      "handlerLine" : 8
+    },
+    {
+      "handlerName" : "on_sandbox",
+      "message" : "Assertion Succeeded:  (assertion: myVar contains \"2\"; true: 2. DOES contain 2)",
+      "timestamp" : "2024-05-15 08:55:15.523 +0100",
+      "identifier" : "LogSuccess",
+      "scriptName" : "sandbox.script",
+      "handlerLine" : 10
+    },
+    {
+      "identifier" : "EndTestCase",
+      "message" : "(Duration:\"3.008607\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2024-05-15 08:55:12 +0100\", Successes:\"1\", TestCase:\"sandbox.script\", Warnings:\"0\")",
+      "timestamp" : "2024-05-15 08:55:15.531 +0100"
+    },
+    {
+      "identifier" : "SUCCESS",
+      "message" : "Execution Time 0:00:03 sandbox.script",
+      "timestamp" : "2024-05-15 08:55:15.538 +0100"
+    }
+  ],
+  "createdTimestamp" : "2024-05-15 08:55:12.522 +0100"
+}

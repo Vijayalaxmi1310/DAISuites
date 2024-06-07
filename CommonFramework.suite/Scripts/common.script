@@ -1,0 +1,98 @@
+﻿
+
+
+to launchURL browser, URL
+	typetext windowskey, "r"
+	typetext browser&&URL, returnkey
+	wait 1
+	waitfor 30, image:"logos"
+	set the searchrectangle to config().(browser)
+end launchURL
+
+//"C:\Program Files (x86)\Aronium\Aronium.Pos.exe"
+
+to launchApplication path, application
+	typetext windowskey, "r"
+	SetRemoteClipboard path
+	
+	typetext controlkey, "v"
+	
+	typetext returnkey
+	wait 1
+	waitfor 30, image:"logos"
+	set the searchrectangle to config().(application)
+end launchApplication
+
+
+
+
+
+to scrollto toFind
+
+	if file (suiteinfo().imagesFolder&"/"&toFind&".png") exists
+		repeat until ImageFound(image:toFind, waitFor:0)
+			scrollwheeldown 8
+			wait 1
+			if repeatindex() > 10
+				logerror "Unable to find image..."&toFind
+				exit repeat
+			end if
+		end repeat
+	else
+		repeat until ImageFound(text:toFind, waitFor:0, casesensitive:on)
+			scrollwheeldown 8
+			wait 1
+			if repeatindex() > 10
+				logerror "Unable to find text..."&toFind
+				exit repeat
+			end if
+		end repeat
+	end if
+	
+	return foundimagelocation()
+end scrollto
+
+
+
+to navigate action, validation
+
+	if action is not empty
+		click scrollTo(action)
+		wait 1
+	end if
+	
+	if validation is not empty
+		waitfor 30, text:validation, casesensitive:on
+	end if
+	
+end navigate
+
+
+to hover toFind
+	moveto scrollto(toFind)
+	wait 1
+end hover
+
+
+to refreshPage //browser specifc
+	typetext F5
+	wait 1
+end refreshPage
+
+
+
+
+to textbox label, input
+	click scrollto(label)
+	typetext input	
+end textbox
+
+
+
+navigate ("Password")
+
+
+textbox "Confirm password", "my password"
+
+hover "Computers"
+

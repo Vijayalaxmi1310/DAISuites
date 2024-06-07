@@ -1,0 +1,6 @@
+﻿2024-05-15 08:55:12.522 +0100	START		Running sandbox.script
+2024-05-15 08:55:15.485 +0100	imagerectangle	(TEXT:"[1024], Application, CBR Server, Total Unicast Fragments Received (fragments) = 24")	at [107,854,515,865]	4	on_sandbox	sandbox.script
+2024-05-15 08:55:15.520 +0100	readtext		(0,849,107,870)	8	on_sandbox	sandbox.script
+2024-05-15 08:55:15.523 +0100	LogSuccess		Assertion Succeeded:  (assertion: myVar contains "2"; true: 2. DOES contain 2)	10	on_sandbox	sandbox.script
+2024-05-15 08:55:15.531 +0100	EndTestCase		(Duration:"3.008607", Errors:"0", Exceptions:"0", StartTime:"2024-05-15 08:55:12 +0100", Successes:"1", TestCase:"sandbox.script", Warnings:"0")
+2024-05-15 08:55:15.538 +0100	SUCCESS		Execution Time 0:00:03 sandbox.script

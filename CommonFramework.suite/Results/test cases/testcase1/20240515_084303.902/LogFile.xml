@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="test cases/testcase1_script" package="forSurath.suite" timestamp="2024-05-15 08:43:03.902 +0100"
+ tests="1"  failures="0" errors="0" time="6.582171">
+  <properties>
+   <property name="RunDate" value="2024-05-15 08:43:03.902 +0100"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="test cases/testcase1.script" assertions="1" status="success"  time="6.577308">
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,4 @@
+﻿return {chrome:[3,90,1518,1033],
+	msedge:[],
+	firefox:[],
+}
