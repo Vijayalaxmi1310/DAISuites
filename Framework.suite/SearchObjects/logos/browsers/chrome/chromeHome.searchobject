@@ -1,0 +1,48 @@
+{
+  "lastmodifieddate" : 1674650448.3962841,
+  "ocrcapturestring" : "G",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "192.168.64.2",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "Windows 11",
+      "connectionportnum" : 3389,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "G",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[9,9]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "logos\/browsers\/chrome\/chromeHome.png",
+      "capturerect" : [
+        118,
+        44,
+        19,
+        18
+      ]
+    }
+  ],
+  "createddate" : 1674650448.3962841,
+  "lastfoundlocation" : [
+    118,
+    44,
+    19,
+    18
+  ],
+  "originalcapturelocation" : [
+    118,
+    44,
+    19,
+    18
+  ],
+  "lastfounddate" : 1674650461.2594972,
+  "name" : "logos\/browsers\/chrome\/chromeHome"
+}

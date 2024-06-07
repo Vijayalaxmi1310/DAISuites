@@ -1,0 +1,139 @@
+﻿(**  
+Common - Handlers for the Common Functions used in test
+@Version 1.0 01/112022 
+@ChangeReason Creation
+
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight’s End User License Agreement. Terms of Keysight’s EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**) 
+
+
+to launchURL browser,url,varlogos
+	set global browser to browser
+	typetext windowskey,"r"
+	if browser contains "edge" 
+		typetext browser&url,returnkey
+	else
+		typetext browser&&url,returnkey
+	end if
+	//waitfor 20, "logos"
+	assert that ImageFound(20,varlogos)
+end launchURL
+
+to closeBrowser
+	typetext controlkey,shiftkey,"w"
+	wait 2
+end closeBrowser
+
+to closeTab expectation
+	typetext controlkey,"w"
+	if expectation is not empty
+		navigate[],(expectation)
+	end if 
+end closeTab
+
+to back expectation
+	typetext altkey,leftarrow
+	if expectation is not empty
+		navigate[],(expectation)
+	end if 
+	wait 3
+end back
+
+
+to scrollTo toFind
+	// Images 
+	set the remoteWorkInterval to 0.1
+	if file (suiteinfo().imagesFolder&"/"&toFind&".png") exists
+		repeat until imagefound(0,image:toFind,searchRectangle:(config().SUT.(global browser)))
+			ScrollWheelDown 5
+			wait 1
+			if repeatindex() > 10 then 
+				logerror "Cannot find"&&toFind
+				Exit repeat
+			end if
+		end repeat
+	else
+		// OCR
+		repeat until imagefound(waitfor:0,text:toFind,searchRectangle:(config().SUT.(global browser)), ignoreNewlines:on, ignorespaces:on)
+			log the textstyle
+			ScrollWheelDown 6 
+			wait 1
+			if repeatindex() > 10 then 
+				logerror "Cannot find"&&toFind
+				Exit repeat
+			end if
+		end repeat
+	end if
+	set the remoteWorkInterval to 0.4
+	return foundimageinfo().imageRectangle 
+end scrollTo
+
+to navigate action,expectation
+	// do something 
+	if action is not empty
+		click the center of core.scrollTo(action)
+		wait 2
+	end if 
+	// check something
+	if expectation is not empty
+		if file (suiteinfo().imagesFolder&"/"&expectation&".png") exists
+			waitfor 10, image:expectation,searchRectangle:(config().SUT.(global browser))
+		else
+			waitfor 10,text:expectation,searchRectangle:(config().SUT.(global browser))
+		end if 
+		moveto (bottomCenter of the RemoteScreenRectangle- [0,300])
+	end if 
+	wait 1
+	// could add an assert here as well for the text / image. still the if would be required. 
+end navigate
+
+to textEntry label,input, offset:(config().dataEntry.textBoxOffset)
+	click CenterLeft of scrollTo(label) + offset
+	wait 0.5
+	typetext controlkey,"a"
+	typetext input
+	wait 0.3
+end textEntry
+
+to hiddenTextEntry label,input, offset:(config().dataEntry.textBoxOffset)
+	click CenterLeft of scrollTo(label) + offset
+	wait 0.5
+	typetext controlkey,"a"
+	typehiddentext input
+	wait 0.3
+end hiddenTextEntry
+
+to checkBox label, offset:(config().dataEntry.checkBoxOffset)
+	click the CenterLeft of scrollTo(label) + offset
+	wait 0.5
+end checkBox
+
+to dropDown label,input, offset:(config().dataEntry.DropBoxOffset)
+	click the Center of scrollTo(label) + offset
+	wait 0.5
+	click the Center of scrollTo(input)
+	wait 0.3
+end dropDown
+
+to LaunchApp path,app:global browser
+	set global browser to app
+	typetext windowskey,"r"
+	typetext path,returnkey
+	//waitfor 20, "logos"
+	assert that ImageFound(20,image:logos,searchRectangle:(config().SUT.(global browser)))
+	typetext windowskey, upArrow // maximize window on windows
+end LaunchApp
+
+to CloseApp
+	//typetext controlkey,shiftkey,"w"
+	typetext altkey, f4
+	wait 2
+end CloseApp
+
+to AppSwitcher varlogos:logos,app:global browser
+	set global app to app
+	typetext altkey, tabkey
+	assert that ImageFound(10,image:varlogos,searchRectangle:(config().SUT.(global browser)))
+end AppSwitcher
+
+

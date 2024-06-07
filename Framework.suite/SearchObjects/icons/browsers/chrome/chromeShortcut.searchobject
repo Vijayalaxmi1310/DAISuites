@@ -1,0 +1,49 @@
+{
+  "lastmodifieddate" : 1678784018.218827,
+  "ocrcapturestring" : ",o",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "192.168.64.2",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "Windows 11",
+      "connectionportnum" : 3389,
+      "deleted" : true,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : ",o",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[17,16]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/browsers\/chrome\/addressBar\/addressBarWindows.png",
+      "capturerect" : [
+        20,
+        215,
+        35,
+        33
+      ]
+    }
+  ],
+  "createddate" : 1674650328.3833299,
+  "lastfoundlocation" : [
+    20,
+    215,
+    35,
+    33
+  ],
+  "originalcapturelocation" : [
+    20,
+    215,
+    35,
+    33
+  ],
+  "lastfounddate" : 1674650379.7846699,
+  "name" : "icons\/browsers\/chrome\/chromeShortcut"
+}
