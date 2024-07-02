@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  self-hosted: Demo_Agent_Pool
 
 steps:
 - script: echo Hello, world!
