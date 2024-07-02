@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  Self-hosted: Vijaya_Demo_Agent_Pool
+  name: Vijaya_Demo_Agent_Pool
 
 steps:
 - script: echo Hello, world!
