@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   Run-Test-Configuration:
     strategy:
@@ -15,16 +16,24 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     name: Run Test Configuration
+
     steps:
+      - uses: suisei-cn/actions-download-file@v1.0.1
+        id: downloadfile  # Remember to give an ID if you need the output filename
+        name: Download the file
+        with:
+          url: "https://assets.eggplantsoftware.com/EggplantRunner/eggplant-runner-Windows-25.1.1+1.exe"
+          target: ${{ runner.temp }}/test/
+
       - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@v1.0.16
         with:
           dryRun: false
           serverURL: "http://127.0.0.1:8000/"
           clientID: "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40"
-          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c" # Test configuration which need to perform execution
+          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c" # Test configuration to perform execution
           clientSecret: "9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ" # Eggplant DAI service client secret
-          # Alternatively, DAI client secret can be set as repo secret but here we are using directly
-          # by going to GitHub Settings > Secrets > Actions
-          # clientSecret: "${{secrets.DAI_CLIENT_SECRET}}"
+          # Alternatively, DAI client secret can be set as repo secret:
+          # clientSecret: "${{ secrets.DAI_CLIENT_SECRET }}"
