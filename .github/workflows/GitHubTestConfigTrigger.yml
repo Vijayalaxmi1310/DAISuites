@@ -1,58 +1,67 @@
-name: YOUR WORK FLOW NAME
+name: Eggplant Runner Build
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
-      - Suites
-  # pull_request:
-  #   branches:
-  #     - Suites
-
+      - main
 jobs:
-  Run-DAI-Test-Configuration:
-    runs-on: self-hosted
-
+  Run-Test-Configuration-Windows:
     strategy:
       max-parallel: 1
-
+      #matrix:
+       #os: [windows-latest]
+   #runs-on: ${{ matrix.os }},[self-hosted]
+    runs-on: [Self-hosted]
+    name: Run Test Configuration Windows
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Print trigger event
-        shell: pwsh
-        run: |
-          Write-Host "Trigger event: ${{ github.event_name }}. Runner OS: ${{ runner.os }}."
-
-      - name: Set DAI environment variables
-        shell: pwsh
-        run: |
-          $EXE_VERSION = $env:DAI_VERSION.ToLower()
-
-          if ($env:RUNNER_OS -eq "Windows") {
-            $EXE_FILENAME = "eggplant-runner-Windows-$EXE_VERSION.exe"
-          } elseif ($env:RUNNER_OS -eq "Linux") {
-            $EXE_FILENAME = "eggplant-runner-Linux-$EXE_VERSION"
-          } elseif ($env:RUNNER_OS -eq "macOS") {
-            $EXE_FILENAME = "eggplant-runner-MacOS-$EXE_VERSION"
-          } else {
-            Write-Error "Unexpected OS: $env:RUNNER_OS"
-            exit 1
-          }
-
-          if ($env:DAI_CLIENT_SECRET) {
-            "DAI_CLIENT_SECRET=$($env:DAI_CLIENT_SECRET)" | Out-File -FilePath $env:GITHUB_ENV -Append
-          }
-
-          "CLI_FILENAME=$EXE_FILENAME" | Out-File -FilePath $env:GITHUB_ENV -Append
-          "DAI_VERSION=$($env:DAI_VERSION)" | Out-File -FilePath $env:GITHUB_ENV -Append
-          "DOWNLOAD_URL=https://assets.eggplantsoftware.com/EggplantRunner/$EXE_FILENAME" | Out-File -FilePath $env:GITHUB_ENV -Append
-
-      - name: Run Eggplant DAI Tests
-        uses: keysight-eggplant/eggplant-github-action@v1.0.16
+      - uses: suisei-cn/actions-download-file@v1.0.1
+        id: downloadfile  # Remember to give an ID if you need the output filename
+        name: Download the file
         with:
-          dai-server-url: "http://localhost:8000/"
-          dai-client-id: "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40"
-          dai-client-secret: "9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ"
-          test-config-id: "f66c0e16-090a-4a42-8573-7679f50bd90c"
-          report-path: "./reportWindows1.xml"
+          url: "https://assets.eggplantsoftware.com/EggplantRunner/eggplant-runner-Windows-25.1.1+1.exe"
+          target: ${{runner.temp}}/test/
+          
+      - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+      - name: Eggplant Runner
+        uses: keysight-eggplant/eggplant-github-action@v1.0.16
+
+       
+        with:
+          dryRun: false
+          serverURL: "http://127.0.0.1:8000/"
+          clientID: "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40"
+          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c" # Test configuration which need to perform execution
+          # Alternatively, DAI client secret can be set as repo secret
+          # by going to GitHub Settings > Secrets > Actions
+          clientSecret: "9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ"
+          testResultPath : "./reportWindows1.xml"
+          
+          
+      - name: "Read file contents"
+        uses: andstor/file-reader-action@v1
+        with:
+          path: "./reportWindows1.xml"
+          
+          
+      - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+      - name: Eggplant Runner
+        uses: keysight-eggplant/eggplant-github-action@v1.0.16
+        
+          
+        with:
+          dryRun: false
+          serverURL: "http://127.0.0.1:8000/"
+          clientID: "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40"
+          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c" # Test configuration which need to perform execution
+          # Alternatively, DAI client secret can be set as repo secret
+          # by going to GitHub Settings > Secrets > Actions
+          clientSecret: "9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ"
+          testResultPath : "./reportWindows2.xml"
+      - name: "Read file contents"
+        uses: andstor/file-reader-action@v1
+        with:
+          path: "./reportWindows2.xml"
