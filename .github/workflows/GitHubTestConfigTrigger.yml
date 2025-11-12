@@ -1,6 +1,5 @@
 name: GitHubActionRunner
 
-# ✅ Trigger configuration
 on:
   push:
     branches:
@@ -9,24 +8,22 @@ on:
     branches:
       - Suites
 
-# ✅ Job configuration
 jobs:
   Run-DAI-Test-Configuration:
     name: Run Test Configuration
-    runs-on: [self-hosted, windows]  # Runner labels must match your self-hosted runner
+    runs-on: self-hosted  # 👈 Use only 'self-hosted' if your runner label doesn't include 'windows'
 
     strategy:
-      max-parallel: 1  # Optional: restricts parallel runs
+      max-parallel: 1
 
     steps:
       - name: Print trigger event
-        shell: pwsh
-        run: echo "Trigger event: ${{ github.event_name }}. Runner OS: ${{ runner.os }}."
+      - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
 
       - name: Run Eggplant DAI Test
         uses: keysight-eggplant/eggplant-github-action@v1.0.16
         with:
-          serverURL: "http://localhost:8000/"  # Required
-          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c"  # Required
-          clientID: "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40"  # Required
-          clientSecret: "9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ"  # Required
+          serverURL: "http://localhost:8000/"
+          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c"
+          clientID: "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40"
+          clientSecret: "9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ"
