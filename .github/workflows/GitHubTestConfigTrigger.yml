@@ -1,13 +1,13 @@
 name: "YOUR WORK FLOW NAME"
 
 # Configure which branch that will trigger Eggplant DAI GitHub Action
-# on:
-#  push:
-#    branches:
-#      - Suites 
-#  pull_request:
-#    branches:
-#      - Suites
+on:
+  push:
+    branches:
+      - Suites 
+  pull_request:
+     branches:
+      - Suites
 
 jobs:
   Run-DAI-Test-Configuration:
