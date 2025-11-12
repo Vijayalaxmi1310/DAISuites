@@ -1,30 +1,78 @@
-name: GitHubActionRunner
+name: Eggplant Runner Build
 
 on:
-  push:
-    branches:
-      - Suites
   pull_request:
     branches:
-      - Suites
-
+      - main
+  push:
+    branches:
+      - main
 jobs:
-  Run-DAI-Test-Configuration:
-    name: Run Test Configuration
-    runs-on: [self-hosted, windows]
+  Run-Test-Configuration-Windows:
     strategy:
       max-parallel: 1
-
+      matrix:
+       os: [windows-latest]
+    runs-on: ${{ matrix.os }}
+    name: Run Test Configuration Windows
+    
     steps:
-      - name: Print trigger event
-        shell: pwsh
-        run: |
-          echo "Trigger event: ${{ github.event_name }}. Runner OS: ${{ runner.os }}."
-
-      - name: Run Eggplant DAI Test
-        uses: keysight-eggplant/eggplant-github-action@v1.0.16
+      - uses: suisei-cn/actions-download-file@v1.0.1
+        id: downloadfile  # Remember to give an ID if you need the output filename
+        name: Download the file
         with:
+          url: "https://downloads.eggplantsoftware.com/downloads/EggplantRunner/eggplant-runner-Windows-6.4.0-5.exe"
+          target: ${{runner.temp}}/test/
+          
+      - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+      - name: Eggplant Runner
+        uses: keysight-eggplant/eggplant-github-action@v1.0.16
+
+       
+        with:
+          dryRun: false
           serverURL: "http://localhost:8000/"
-          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c"
           clientID: "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40"
+          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c" # Test configuration which need to perform execution
+          # Alternatively, DAI client secret can be set as repo secret
+          # by going to GitHub Settings > Secrets > Actions
           clientSecret: "9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ"
+          testResultPath : "./reportWindows1.xml"
+          logLevel: INFO
+          testEnvironmentTimeout: 45
+          pollInterval: 5
+          requestTimeout: 30
+          requestRetries: 5
+          
+          
+      - name: "Read file contents"
+        uses: andstor/file-reader-action@v1
+        with:
+          path: "./reportWindows1.xml"
+          
+          
+      - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+      - name: Eggplant Runner
+        uses: keysight-eggplant/eggplant-github-action@v1.0.16
+        
+          
+        with:
+          dryRun: false
+          serverURL: "http://localhost:8000/"
+          clientID: "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40"
+          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c" # Test configuration which need to perform execution
+          # Alternatively, DAI client secret can be set as repo secret
+          # by going to GitHub Settings > Secrets > Actions
+          clientSecret: "9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ"
+          testResultPath : "./reportWindows2.xml"
+          logLevel: INFO
+          testEnvironmentTimeout: 30
+          pollInterval: 5
+          requestTimeout: 30
+          requestRetries: 5
+          
+          
+      - name: "Read file contents"
+        uses: andstor/file-reader-action@v1
+        with:
+          path: "./reportWindows2.xml"
