@@ -20,7 +20,7 @@ jobs:
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@main
         with:
-          dryRun: true
+          dryRun: false
           serverURL: "http://localhost:8000/"
           clientID: "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40"
           testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c" # Test configuration which need to perform execution
