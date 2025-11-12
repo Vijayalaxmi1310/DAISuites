@@ -22,7 +22,7 @@ jobs:
         id: downloadfile  # Remember to give an ID if you need the output filename
         name: Download the file
         with:
-          url: "https://assets.eggplantsoftware.com/EggplantDAI/eggplantDAI-25.1.1+1.exe"
+          url: "https://assets.eggplantsoftware.com/EggplantRunner/eggplant-runner-Windows-25.1.1+1.exe"
           target: ${{runner.temp}}/test/
           
       - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
