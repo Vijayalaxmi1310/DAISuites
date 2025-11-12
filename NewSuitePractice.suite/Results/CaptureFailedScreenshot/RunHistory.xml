@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="CaptureFailedScreenshot">
+ <run>
+  <RunDate>2023-06-28 12:03:49.995 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>6.331000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_120349.995/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:06:38.088 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>0.772000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20230628_120638.088/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:07:58.734 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>0.992000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20230628_120758.734/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:08:48.031 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>0.775000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20230628_120848.031/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:18:37.483 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>0.813000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20230628_121837.483/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:19:10.842 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>0.806000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20230628_121910.842/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:20:38.403 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.690000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_122038.403/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:22:01.066 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.560000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_122201.066/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:22:38.307 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.720000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_122238.307/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:23:10.698 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.608000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_122310.698/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:23:32.329 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.620000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_122332.329/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:24:01.052 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.641000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_122401.052/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:24:46.916 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.598000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_122446.916/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:25:44.927 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.838000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_122544.927/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:27:01.663 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.184000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_122701.663/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Error Running Script Command -- runwithnewresults Error - Unable to locate script named: </ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:27:09.595 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>0.878000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20230628_122709.595/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:50:34.459 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>0.790000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20230628_125034.459/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:51:56.796 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.741000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_125156.796/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:56:17.624 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>0.952000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20230628_125617.624/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2023-06-28 12:57:27.693 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.727000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20230628_125727.693/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+</runHistory>

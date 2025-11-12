@@ -1,0 +1,36 @@
+{
+  "entries" : [
+    {
+      "identifier" : "START",
+      "message" : "Running test cases\/testcase1.script",
+      "timestamp" : "2024-05-15 08:42:12.681 +0100"
+    },
+    {
+      "handlerName" : "on_launchapplication",
+      "message" : "[windowsKey]r",
+      "timestamp" : "2024-05-15 08:42:12.775 +0100",
+      "identifier" : "typetext",
+      "scriptName" : "common.script",
+      "handlerLine" : 2
+    },
+    {
+      "handlerName" : "on_launchapplication",
+      "message" : "C:\\Program Files (x86)\\Aronium\\Aronium.Pos.exe[returnKey]",
+      "timestamp" : "2024-05-15 08:42:14.124 +0100",
+      "identifier" : "typetext",
+      "scriptName" : "common.script",
+      "handlerLine" : 3
+    },
+    {
+      "identifier" : "EndTestCase",
+      "message" : "(Duration:\"7.117473\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2024-05-15 08:42:12 +0100\", Successes:\"0\", TestCase:\"test cases\/testcase1.script\", Warnings:\"0\")",
+      "timestamp" : "2024-05-15 08:42:19.813 +0100"
+    },
+    {
+      "identifier" : "ABORTED",
+      "message" : "Execution Time 0:00:07 test cases\/testcase1.script",
+      "timestamp" : "2024-05-15 08:42:19.816 +0100"
+    }
+  ],
+  "createdTimestamp" : "2024-05-15 08:42:12.694 +0100"
+}

@@ -1,0 +1,46 @@
+{
+	"lastmodifieddate": 1687325734.7290001,
+	"lastfoundlocation": [
+		413,
+		197,
+		260,
+		326
+	],
+	"originalcapturelocation": [
+		458,
+		200,
+		260,
+		326
+	],
+	"createddate": 1687325734.7290001,
+	"lastfounddate": 1687325789.5120001,
+	"testlocationdata": [
+		{
+				"connectionportnum": 5905,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[-420,32]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "Desktop.png",
+				"connectionname": "Partner-SUT-4",
+				"type": 1,
+				"capturerect": [
+					458,
+					200,
+					260,
+					326
+				],
+				"connectiontype": "rdp",
+				"connectionserverid": "tcsesuts.eggplantlab.com"
+			}
+	],
+	"name": "Desktop"
+}

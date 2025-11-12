@@ -1,0 +1,6 @@
+﻿2023-06-28 12:51:56.804 +0530	START		Running CaptureFailedScreenshot.script
+2023-06-28 12:51:56.912 +0530	Log		D:/EggplantSuites/NewSuitePractice.suite/Results/MPCBPart/Logfile.txt	4	on_capturefailedscreenshot	CaptureFailedScreenshot.script
+2023-06-28 12:51:56.936 +0530	Connect		TutorialSUT:(null)	2	function_script1	DummyFailedScript.script
+2023-06-28 12:51:57.457 +0530	Exception	(TEXT:"laxmi")	No Text Found On Screen: "(TEXT:"laxmi")". Text not found.	3	function_script1	DummyFailedScript.script
+2023-06-28 12:51:57.537 +0530	EndTestCase		(Duration:"0.729", Errors:"1", Exceptions:"1", StartTime:"2023-06-28 12:51:56 +0530", Successes:"0", TestCase:"CaptureFailedScreenshot.script", Warnings:"0")
+2023-06-28 12:51:57.675 +0530	FAILURE	Screen_Error.png	Image Not Found: click Error - No Text Found On Screen: "(TEXT:"laxmi")". Text not found. -- Execution Time 0:00:00 CaptureFailedScreenshot.script

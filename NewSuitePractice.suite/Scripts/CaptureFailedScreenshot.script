@@ -1,0 +1,33 @@
+﻿---- Way 2 -----------
+put suiteInfo().resultsFolder&slash&MPCBPart&"" into RootPath  -- It creates a custom folder with the name of MPCBPart
+put RootPath&slash&"Logfile.txt" into TotalFilePath -- It creates a LogFile.txt folder inside above custom folder
+log TotalFilePath
+put " " into file TotalFilePath
+
+DummyFailedScript
+CreateCustomFolderinResults.writeDataToTXT
+
+(*put the result into Outcome
+log Outcome
+if Outcome.ErrorMessage is not empty
+	put Global HandlerName&&Outcome.ErrorMessage into file TotalFilePath 
+end if*)
+
+
+----- Way 1 --------
+
+put suiteInfo().resultsFolder&slash&MPCBPart&"" into RootPath  -- It creates a custom folder with the name of MPCBPart
+put RootPath&slash&"Logfile.txt" into TotalFilePath -- It creates a LogFile.txt folder inside above custom folder
+log TotalFilePath
+put " " into file TotalFilePath
+RunWithNewResults "DummyFailedScript"
+put the result into Outcome
+log Outcome
+if Outcome.ErrorMessage is not empty
+	put Global HandlerName&&Outcome.ErrorMessage into file TotalFilePath 
+end if
+
+
+
+
+

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="BottlesScript_script" package="NewSuitePractice.suite" timestamp="2023-06-28 10:50:12.099 +0530"
+ tests="1"  failures="0" errors="0" time="112.599000">
+  <properties>
+   <property name="RunDate" value="2023-06-28 10:50:12.099 +0530"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="BottlesScript.script" assertions="1" status="success"  time="112.588">
+  </testcase>
+ </testsuite>
+</testsuites>

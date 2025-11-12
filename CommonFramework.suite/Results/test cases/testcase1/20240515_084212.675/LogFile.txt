@@ -1,0 +1,5 @@
+﻿2024-05-15 08:42:12.681 +0100	START		Running test cases/testcase1.script
+2024-05-15 08:42:12.775 +0100	typetext		[windowsKey]r	2	on_launchapplication	common.script
+2024-05-15 08:42:14.124 +0100	typetext		C:\Program Files (x86)\Aronium\Aronium.Pos.exe[returnKey]	3	on_launchapplication	common.script
+2024-05-15 08:42:19.813 +0100	EndTestCase		(Duration:"7.117473", Errors:"1", Exceptions:"0", StartTime:"2024-05-15 08:42:12 +0100", Successes:"0", TestCase:"test cases/testcase1.script", Warnings:"0")
+2024-05-15 08:42:19.816 +0100	ABORTED		Execution Time 0:00:07 test cases/testcase1.script

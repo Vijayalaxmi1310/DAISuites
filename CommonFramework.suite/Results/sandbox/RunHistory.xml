@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="sandbox">
+ <run>
+  <RunDate>2024-05-15 08:55:01.046 +0100</RunDate>
+  <Status>Failure</Status>
+  <Duration>3.160795</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20240515_085501.046/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>AssertionFailed --  (assertion: mVar contains &quot;2&quot;; actually: mVar DOES NOT contain 2)</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2024-05-15 08:55:12.520 +0100</RunDate>
+  <Status>Success</Status>
+  <Duration>3.011396</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20240515_085512.520/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

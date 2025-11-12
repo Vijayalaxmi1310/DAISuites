@@ -1,0 +1,10 @@
+﻿
+
+//find the main text
+put ImageRectangle(text:"[1024], Application, CBR Server, Total Unicast Fragments Received (fragments) = 24", waitfor:0, ignorespaces:on) into myRect
+// create a rectangle to look to the left of the found text
+set newrect to [0,myRect.top - 5, myRect.left, myRect.bottom + 5]
+//read the text in that recangle
+set myVar to ReadText(newRect)
+//validate it contains the expectation
+assert that myVar contains "2"

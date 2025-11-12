@@ -1,0 +1,5 @@
+﻿2023-06-28 12:19:10.946 +0530	START		Running DummyFailedScript.script	5	on_capturefailedscreenshot	CaptureFailedScreenshot.script
+2023-06-28 12:19:10.963 +0530	Connect		TutorialSUT:(null)	1	on_dummyfailedscript	DummyFailedScript.script
+2023-06-28 12:19:11.438 +0530	Exception	(TEXT:"laxmi")	No Text Found On Screen: "(TEXT:"laxmi")". Text not found.	2	on_dummyfailedscript	DummyFailedScript.script
+2023-06-28 12:19:11.448 +0530	EndTestCase		(Duration:"0.493", Errors:"1", Exceptions:"1", StartTime:"2023-06-28 12:19:10 +0530", Successes:"0", TestCase:"DummyFailedScript.script", Warnings:"0")	5	on_capturefailedscreenshot	CaptureFailedScreenshot.script
+2023-06-28 12:19:11.548 +0530	FAILURE	Screen_Error.png	Image Not Found: click Error - No Text Found On Screen: "(TEXT:"laxmi")". Text not found. -- Execution Time 0:00:00 DummyFailedScript.script	5	on_capturefailedscreenshot	CaptureFailedScreenshot.script

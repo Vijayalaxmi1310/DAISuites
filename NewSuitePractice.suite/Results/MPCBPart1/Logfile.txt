@@ -1,0 +1,3 @@
+script1 Runtime Error at line 4: Image Not Found - click Error - No Text Found On Screen: "(TEXT:"laxmi")". Text not found.
+script2 Runtime Error at line 4: Image Not Found - click Error - No Text Found On Screen: "(TEXT:"Vijaya")". Text not found.
+script2 Runtime Error at line 4: Image Not Found - click Error - No Text Found On Screen: "(TEXT:"Vijaya")". Text not found.

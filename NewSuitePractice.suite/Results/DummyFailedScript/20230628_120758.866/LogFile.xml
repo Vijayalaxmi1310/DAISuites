@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="DummyFailedScript_script" package="NewSuitePractice.suite" timestamp="2023-06-28 12:07:58.866 +0530"
+ tests="1"  failures="1" errors="1" time="0.564000">
+  <properties>
+   <property name="RunDate" value="2023-06-28 12:07:58.866 +0530"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="DummyFailedScript.script" assertions="1" status="error"  time="0.547">
+    <failure type="FAILURE" message="Image Not Found: click Error - No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found. -- Execution Time 0:00:00 DummyFailedScript.script" />
+    <error type="Exception" message="No Text Found On Screen: &quot;(TEXT:&quot;laxmi&quot;)&quot;. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

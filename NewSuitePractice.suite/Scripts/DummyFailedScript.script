@@ -1,0 +1,31 @@
+﻿
+script1
+Script2
+to script1
+	try
+		Connect "TutorialSUT"
+		click text:"laxmi",waitFor:0
+	catch theException
+		log theException
+		put param(0) into Global HandlerName
+		put Global HandlerName&& theException into Global ErrorMessage
+		CaptureScreen {Name:suiteInfo().resultsFolder&slash&MPCBPart1&slash&"ErrorScreenshot"&"("&Global HandlerName&")"}
+		
+	end try
+	
+end script1
+
+
+
+to Script2
+	try 
+		Connect "TutorialSUT"
+		click text:"Vijaya",waitFor:0
+		catch theException
+		log theException
+		put param(0) into Global HandlerName
+		put Global HandlerName&& theException into Global ErrorMessage 
+		CaptureScreen {Name:suiteInfo().resultsFolder&slash&MPCBPart1&slash&"ErrorScreenshot"&"("&Global HandlerName&")"}
+	end try
+	
+end Script2

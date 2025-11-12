@@ -1,0 +1,69 @@
+{
+  "entries" : [
+    {
+      "identifier" : "START",
+      "message" : "Running test cases\/testcase1.script",
+      "timestamp" : "2024-05-15 08:43:03.905 +0100"
+    },
+    {
+      "handlerName" : "on_launchapplication",
+      "message" : "[windowsKey]r",
+      "timestamp" : "2024-05-15 08:43:03.993 +0100",
+      "identifier" : "typetext",
+      "scriptName" : "common.script",
+      "handlerLine" : 2
+    },
+    {
+      "handlerName" : "on_launchapplication",
+      "message" : "Set Text:C:\\Program Files (x86)\\Aronium\\Aronium.Pos.exe",
+      "timestamp" : "2024-05-15 08:43:03.995 +0100",
+      "identifier" : "setremoteclipboard",
+      "scriptName" : "common.script",
+      "handlerLine" : 3
+    },
+    {
+      "handlerName" : "on_launchapplication",
+      "message" : "[controlKey]v",
+      "timestamp" : "2024-05-15 08:43:04.727 +0100",
+      "identifier" : "typetext",
+      "scriptName" : "common.script",
+      "handlerLine" : 5
+    },
+    {
+      "handlerName" : "on_launchapplication",
+      "message" : "[returnKey]",
+      "timestamp" : "2024-05-15 08:43:05.447 +0100",
+      "identifier" : "typetext",
+      "scriptName" : "common.script",
+      "handlerLine" : 7
+    },
+    {
+      "handlerName" : "on_launchapplication",
+      "message" : "found at (782, 268)",
+      "identifier" : "waitfor",
+      "image" : "logos",
+      "handlerLine" : 9,
+      "timestamp" : "2024-05-15 08:43:10.463 +0100",
+      "scriptName" : "common.script"
+    },
+    {
+      "handlerName" : "on_launchapplication",
+      "message" : "SEARCHRECTANGLE = [3,28,1519,1032]",
+      "timestamp" : "2024-05-15 08:43:10.469 +0100",
+      "identifier" : "set",
+      "scriptName" : "common.script",
+      "handlerLine" : 10
+    },
+    {
+      "identifier" : "EndTestCase",
+      "message" : "(Duration:\"6.577308\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2024-05-15 08:43:03 +0100\", Successes:\"1\", TestCase:\"test cases\/testcase1.script\", Warnings:\"0\")",
+      "timestamp" : "2024-05-15 08:43:10.484 +0100"
+    },
+    {
+      "identifier" : "SUCCESS",
+      "message" : "Execution Time 0:00:06 test cases\/testcase1.script",
+      "timestamp" : "2024-05-15 08:43:10.492 +0100"
+    }
+  ],
+  "createdTimestamp" : "2024-05-15 08:43:03.907 +0100"
+}

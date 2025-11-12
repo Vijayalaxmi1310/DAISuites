@@ -1,0 +1,49 @@
+{
+  "lastmodifieddate" : 1678784018.217725,
+  "ocrcapturestring" : "c",
+  "testlocationdata" : [
+    {
+      "connectionserverid" : "192.168.64.2",
+      "sutinfo" : {
+        "type" : "Unknown RDP"
+      },
+      "connectionname" : "Windows 11",
+      "connectionportnum" : 3389,
+      "deleted" : true,
+      "connectiontype" : "RDP",
+      "capturedocrtext" : "c",
+      "properties" : {
+        "Rotate" : 0,
+        "Scale" : "    1",
+        "SearchType" : "Tolerant of Background",
+        "Discrepancy" : "_0",
+        "Tolerance" : "_45",
+        "HotSpot" : "[10,9]",
+        "CropRectangle" : "[0,0,0,0]"
+      },
+      "type" : 1,
+      "name" : "icons\/browsers\/chrome\/addressBar\/addressBarAndroid.png",
+      "capturerect" : [
+        621,
+        51,
+        20,
+        19
+      ]
+    }
+  ],
+  "createddate" : 1674650394.1972718,
+  "lastfoundlocation" : [
+    621,
+    51,
+    20,
+    19
+  ],
+  "originalcapturelocation" : [
+    621,
+    51,
+    20,
+    19
+  ],
+  "lastfounddate" : 1674650394.832319,
+  "name" : "icons\/browsers\/chrome\/refresh"
+}

@@ -1,0 +1,1 @@
+2024-05-15 08:55:01.046 +0100,Failure,0:00:03,1,0,0,20240515_085501.046/LogFile.txt,"","AssertionFailed --  (assertion: mVar contains ""2""; actually: mVar DOES NOT contain 2)",0

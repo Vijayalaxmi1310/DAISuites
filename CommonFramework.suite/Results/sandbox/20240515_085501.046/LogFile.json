@@ -1,0 +1,38 @@
+{
+  "entries" : [
+    {
+      "identifier" : "START",
+      "message" : "Running sandbox.script",
+      "timestamp" : "2024-05-15 08:55:01.049 +0100"
+    },
+    {
+      "handlerName" : "on_sandbox",
+      "message" : "at [107,854,515,865]",
+      "identifier" : "imagerectangle",
+      "image" : "(TEXT:\"[1024], Application, CBR Server, Total Unicast Fragments Received (fragments) = 24\")",
+      "handlerLine" : 4,
+      "timestamp" : "2024-05-15 08:55:04.157 +0100",
+      "scriptName" : "sandbox.script"
+    },
+    {
+      "handlerName" : "on_sandbox",
+      "message" : "(0,849,107,870)",
+      "timestamp" : "2024-05-15 08:55:04.190 +0100",
+      "identifier" : "readtext",
+      "scriptName" : "sandbox.script",
+      "handlerLine" : 8
+    },
+    {
+      "identifier" : "EndTestCase",
+      "message" : "(Duration:\"3.15683\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2024-05-15 08:55:01 +0100\", Successes:\"0\", TestCase:\"sandbox.script\", Warnings:\"0\")",
+      "timestamp" : "2024-05-15 08:55:04.208 +0100"
+    },
+    {
+      "message" : "AssertionFailed:  (assertion: mVar contains \"2\"; actually: mVar DOES NOT contain 2) -- Execution Time 0:00:03 sandbox.script",
+      "timestamp" : "2024-05-15 08:55:04.325 +0100",
+      "identifier" : "FAILURE",
+      "image" : "Screen_Error.png"
+    }
+  ],
+  "createdTimestamp" : "2024-05-15 08:55:01.050 +0100"
+}
