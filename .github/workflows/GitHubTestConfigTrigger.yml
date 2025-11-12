@@ -11,14 +11,15 @@ on:
 jobs:
   Run-DAI-Test-Configuration:
     name: Run Test Configuration
-    runs-on: self-hosted  # 👈 Use only 'self-hosted' if your runner label doesn't include 'windows'
+    runs-on: self-hosted  # adjust to match your runner labels exactly
 
     strategy:
       max-parallel: 1
 
     steps:
       - name: Print trigger event
-      - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+        shell: pwsh
+        run: echo "Trigger event: ${{ github.event_name }}. Runner OS: ${{ runner.os }}."
 
       - name: Run Eggplant DAI Test
         uses: keysight-eggplant/eggplant-github-action@v1.0.16
