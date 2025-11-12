@@ -32,8 +32,8 @@ jobs:
         with:
           dryRun: false
           serverURL: "http://127.0.0.1:8000/"
-          clientID: "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40"
           testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c" # Test configuration to perform execution
-          clientSecret: "9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ" # Eggplant DAI service client secret
+          clientID: "${{ secrets.DAI_CLIENT_ID }}"
+          clientSecret: "${{ secrets.DAI_CLIENT_SECRET }}"
           # Alternatively, DAI client secret can be set as repo secret:
           # clientSecret: "${{ secrets.DAI_CLIENT_SECRET }}"
