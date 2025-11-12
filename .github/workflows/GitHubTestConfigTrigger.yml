@@ -13,7 +13,7 @@ jobs:
       max-parallel: 1
       matrix:
        os: [windows-latest]
-    runs-on: ${{ matrix.os,self-hosted }}
+    runs-on: ${{ matrix.os }},[self-hosted]
     name: Run Test Configuration Windows
     
     steps:
