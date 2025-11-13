@@ -60,6 +60,6 @@ jobs:
 
           clientSecret: "${{ secrets.DAI_CLIENT_SECRET }}"
 
-          shell: pwsh
+          shell: powershell
 
  
