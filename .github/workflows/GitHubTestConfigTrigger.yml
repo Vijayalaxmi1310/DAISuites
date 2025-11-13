@@ -26,6 +26,7 @@ jobs:
           target: ${{ runner.temp }}/test/
 
       - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
+        shell: pwsh
 
       - name: Eggplant Runner
         uses: keysight-eggplant/eggplant-github-action@v1.0.18
