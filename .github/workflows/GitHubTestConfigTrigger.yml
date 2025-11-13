@@ -57,6 +57,6 @@ jobs:
 
           clientID: "${{ secrets.DAI_CLIENT_ID }}"
 
-          clientSecret: "${{ secrets.DAI_CLIENT_SECRET }}"
+          clientSecret: "${{ secrets.DAI_CLIENT_SECRET }}" # client secret
 
  
