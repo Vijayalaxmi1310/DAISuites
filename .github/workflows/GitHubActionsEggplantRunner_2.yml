@@ -34,5 +34,5 @@ jobs:
       - name: Run DAI Tests
         run: |
               echo Running DAI tests
-              .\DAIRunner.exe -v testconfig f66c0e16-090a-4a42-8573-7679f50bd90c vijayalaxmi Eggplant#12345 NewSuiteTestConfig
+              C:\Users\vijayalaxmi.kummari\Downloads\eggplant-runner-Windows-25.2.0+5.exe -v testconfig f66c0e16-090a-4a42-8573-7679f50bd90c vijayalaxmi Eggplant#12345 NewSuiteTestConfig
                 echo DAI tests complete.
