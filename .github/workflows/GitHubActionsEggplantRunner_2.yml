@@ -32,6 +32,5 @@ jobs:
       - name: Run DAI tests
         run: |
           echo Running DAI tests
-          chmod +x DAIRunner
           ./DAIRunner -v testconfig f66c0e16-090a-4a42-8573-7679f50bd90c vijayalaxmi Eggplant#12345 NewSuiteTestConfig
           echo DAI tests complete.
