@@ -1,39 +1,65 @@
 name: Eggplant Runner Build
-
+ 
 on:
+
   pull_request:
+
     branches:
+
       - main
+
   push:
+
     branches:
+
       - main
-
+ 
 jobs:
+
   Run-Test-Configuration:
+
     strategy:
+
       max-parallel: 1
-      #matrix:
-       #os: [ubuntu-latest, windows-latest, macos-latest]
+
     runs-on: self-hosted
+
     name: Run Test Configuration
-
+ 
     steps:
-      #- uses: suisei-cn/actions-download-file@v1.0.1
-      #  id: downloadfile  # Remember to give an ID if you need the output filename
-      #  name: Download the file
-       # with:
-        #  url: "https://assets.eggplantsoftware.com/EggplantRunner/eggplant-runner-Windows-25.2.0+5.exe"
-         # target: ${{ runner.temp }}/test/
 
-      - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
-      
-      - name: Eggplant Runner
+      # Step 1: Simple debug
+
+      - name: Debug trigger & runner OS
+
+        shell: pwsh
+
+        run: |
+
+          Write-Host "Trigger event: $($env:GITHUB_EVENT_NAME)"
+
+          Write-Host "Runner OS: $($env:RUNNER_OS)"
+
+          Write-Host "Runner Temp Dir: $($env:RUNNER_TEMP)"
+ 
+      # Step 2: Eggplant Runner
+
+      - name: Run Eggplant Test
+
         uses: keysight-eggplant/eggplant-github-action@v1.0.18
+
         with:
+
           dryRun: false
+
           serverURL: "http://localhost:8000/"
-          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c" # Test configuration to perform execution
+
+          testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c"
+
           clientID: "${{ secrets.DAI_CLIENT_ID }}"
+
           clientSecret: "${{ secrets.DAI_CLIENT_SECRET }}"
-          # Alternatively, DAI client secret can be set as repo secret:
-          # clientSecret: "${{ secrets.DAI_CLIENT_SECRET }}"
+
+          shell: pwsh
+
+ 
