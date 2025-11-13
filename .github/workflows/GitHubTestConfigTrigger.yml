@@ -18,12 +18,12 @@ jobs:
     name: Run Test Configuration
 
     steps:
-      - uses: suisei-cn/actions-download-file@v1.0.1
-        id: downloadfile  # Remember to give an ID if you need the output filename
-        name: Download the file
-        with:
-          url: "https://assets.eggplantsoftware.com/EggplantRunner/eggplant-runner-Windows-25.2.0+5.exe"
-          target: ${{ runner.temp }}/test/
+      #- uses: suisei-cn/actions-download-file@v1.0.1
+      #  id: downloadfile  # Remember to give an ID if you need the output filename
+      #  name: Download the file
+       # with:
+        #  url: "https://assets.eggplantsoftware.com/EggplantRunner/eggplant-runner-Windows-25.2.0+5.exe"
+         # target: ${{ runner.temp }}/test/
 
       - run: echo "Trigger event.. ${{ github.event_name }}. Runner OS.. ${{ runner.os }}."
       
