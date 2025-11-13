@@ -25,7 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout repository files 
         uses: actions/checkout@v2
-
+        with:
+          url: https://assets.eggplantsoftware.com/EggplantRunner/eggplant-runner-Windows-25.2.0+5.exe
+          target: DAIRunner.exe
       - name: Source Branch Name
         run: echo ${{ github.ref }}
 
