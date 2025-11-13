@@ -31,7 +31,6 @@ jobs:
         uses: keysight-eggplant/eggplant-github-action@v1.0.18
         with:
           dryRun: false
-          shell: "C:\\Program Files\\Git\\bin\\bash.exe"
           serverURL: "http://localhost:8000/"
           testConfigID: "f66c0e16-090a-4a42-8573-7679f50bd90c" # Test configuration to perform execution
           clientID: "${{ secrets.DAI_CLIENT_ID }}"
