@@ -34,5 +34,5 @@ jobs:
       - name: Run DAI Tests
         run: |
               echo Running DAI tests
-              C:\Users\vijayalaxmi.kummari\Downloads\eggplant-runner-Windows-25.2.0+5.exe --serverURL "http://localhost:8000/" --clientID "client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40" --clientSecret "9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ" --testConfigID "f66c0e16-090a-4a42-8573-7679f50bd90c"
+              C:\Users\vijayalaxmi.kummari\Downloads\eggplant-runner-Windows-25.2.0+5.exe "http://localhost:8000/" "f66c0e16-090a-4a42-8573-7679f50bd90c" --client-id=client:dai:api:integration:bde01020-f928-4f19-b8db-13f8e0aa9a40 --client-secret=9oiyJ0CYdRPoXeWkYXKvoOnfzwGwzMpQ
                 echo DAI tests complete.
