@@ -1,6 +1,7 @@
 ﻿Script,Last Status,Runs,Fails,First Run,Last Run,Avg Time(Success)
-CreateCustomFolderinResults,Failure,1,1,2023-06-28 12:51:50 +0530,2023-06-28 12:51:50 +0530,0:00:00
 BottlesScript,Success,1,0,2023-06-28 10:50:12 +0530,2023-06-28 10:50:12 +0530,0:01:52
-APITest1-API,Success,1,0,2023-06-30 14:32:00 +0530,2023-06-30 14:32:00 +0530,0:00:00
-DummyFailedScript,Failure,10,10,2023-06-28 12:04:49 +0530,2023-06-28 12:56:17 +0530,0:00:00
 CaptureFailedScreenshot,Failure,20,12,2023-06-28 12:03:49 +0530,2023-06-28 12:57:27 +0530,0:00:00
+DummyFailedScript,Failure,10,10,2023-06-28 12:04:49 +0530,2023-06-28 12:56:17 +0530,0:00:00
+APITest1-API,Success,1,0,2023-06-30 14:32:00 +0530,2023-06-30 14:32:00 +0530,0:00:00
+Testcase1,Success,1,0,2025-11-12 10:33:14 +0530,2025-11-12 10:33:14 +0530,0:00:48
+CreateCustomFolderinResults,Failure,1,1,2023-06-28 12:51:50 +0530,2023-06-28 12:51:50 +0530,0:00:00
