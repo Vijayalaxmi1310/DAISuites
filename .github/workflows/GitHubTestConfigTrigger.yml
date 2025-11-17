@@ -31,7 +31,6 @@ jobs:
       # Step 1: Simple debug
 
       - name: Debug trigger & runner OS
-        shell: "C:\\Program Files\\Git\\bin\\bash.exe"
 
         run: |
 
@@ -58,5 +57,5 @@ jobs:
           clientID: "${{ secrets.DAI_CLIENT_ID }}"
 
           clientSecret: "${{ secrets.DAI_CLIENT_SECRET }}" # client secret
-          shell: "C:\\Program Files\\Git\\bin\\bash.exe"
+          
  
