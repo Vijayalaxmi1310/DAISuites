@@ -1,4 +1,3 @@
-#﻿Connect "OwnSUT"
 wait 5
 typetext windowsKey,r
 waitFor 10,text:"Type the name"
